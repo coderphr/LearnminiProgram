@@ -1,0 +1,7 @@
+<!--views/login/login.wxml-->
+<view class="logincontainer">
+  <div class="title">用户登录</div>
+  <input type="text" value="{{name}}"  data-type="phone" bindinput="handleinp" placeholder="请输入电话号码" />
+  <input type="password" value="{{pwd}}" data-type="pwd" bindinput="handleinp" placeholder="请输入密码" />
+  <button type="submit" class="btn"  bindtap="login">登录</button>
+</view>

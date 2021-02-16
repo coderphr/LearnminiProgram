@@ -1,0 +1,29 @@
+/* views/login/login.wxss */
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500rpx;
+  height: 500rpx;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border: 1rpx solid #eeeeee;
+  box-shadow: 2rpx 1rpx 0 2rpx #eeeeee;
+  border-radius: 10rpx;
+}
+.logincontainer .title {
+  font-size: 50rpx;
+  color: #ca8888;
+}
+.logincontainer input {
+  margin: 30rpx 0;
+  padding: 20rpx 0;
+  border: 1rpx solid #ebd5d5;
+  border-radius: 10rpx;
+}
+
+.logincontainer .btn {
+  color: rgb(33, 199, 199);
+}

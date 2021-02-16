@@ -1,0 +1,62 @@
+<view class="profile">
+  <view class="header">
+  <image src="/images/personal/bgImg2.jpg" class="header_image"></image>
+  <view class="user">
+    <image src="{{avatarUrl}}" bindtap="handleclick"></image>
+    <view class="name" bindtap="handleclick">{{nickName}}</view>
+  </view>
+  <view class="vip">
+    <text class="vip_button">立即开通</text>
+    <image src="/images/personal/vip-card-bg.png"></image>
+    <view class="vip_text">
+      <view class="title">音乐会员</view>
+      <text class="text">开通会员听歌</text>
+    </view>
+  </view>
+  <view class="footer">
+    <image src="/images/personal/arc.png"></image>
+  </view>
+</view>
+<view class="classify">
+  <view class="classify_item">
+    <image src="/images/iconfont/xinxi.png"></image>
+    <text>我的信息</text>
+  </view>
+  <view class="classify_item">
+    <image src="/images/iconfont/friends.png"></image>
+    <text>我的好友</text>
+  </view>
+  <view class="classify_item">
+    <image src="/images/iconfont/personal.png"></image>
+    <text>个人主页</text>
+  </view>
+  <view class="classify_item">
+    <image src="/images/iconfont/clothing.png"></image>
+    <text>个性装扮</text>
+  </view>
+</view>
+<view class="profile_footer">
+  <view class="recently">
+    <text class="title">最近播放</text>
+    <view wx:if="{{rencentLists.length == 0}}">暂无播放记录</view>
+    <scroll-view wx:else class="recently_scroll" enable-flex scroll-x="true">
+      <view class="scroll_item" wx:for="{{rencentLists}}" wx:key="index">
+        <image src="{{item.mlogExtVO.song.coverUrl}}"></image>
+        <text class="name">{{item.mlogExtVO.song.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="footer_item">
+    <text class="title">我的音乐</text>
+    <text>></text>
+  </view>
+  <view class="footer_item">
+    <text class="title">我的音乐</text>
+    <text>></text>
+  </view>
+  <view class="footer_item">
+    <text class="title">我的音乐</text>
+    <text>></text>
+  </view>
+</view>
+</view>

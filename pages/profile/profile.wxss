@@ -1,0 +1,172 @@
+/* pages/profile/profile.wxss */
+.profile {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 450rpx;
+  overflow: hidden;
+}
+.header_image {
+  opacity: 0.8;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+}
+.user {
+  position: absolute;
+  top: 20%;
+  left: 40rpx;
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+}
+
+.user image {
+  width: 100rpx;
+  height: 100%;
+  border: 8rpx solid #fff;
+  border-radius: 50%;
+}
+.user .name {
+  margin-left: 30rpx;
+  font-size: 40rpx;
+}
+.vip {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 200rpx;
+  color: #f7d680;
+  background: linear-gradient(left, red, black);
+  background: rgba(0, 0, 0, .8);
+  border-radius: 20rpx;
+  z-index: 1;
+}
+.vip_button {
+  padding:5rpx 10rpx;
+  position: absolute;
+  right:5%;
+  top: 10%;
+  font-size: 23rpx;
+  color: #000000;
+  background-color: #f9e6af;
+  border-radius: 20rpx;
+  z-index: 1;
+}
+.vip_text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.vip_text .title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 20rpx;
+}
+.vip_text .text {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  font-size: 30rpx;
+}
+
+.vip image {
+  opacity: .8;
+  float: right;
+  width: 50%;
+  height: 150%;
+  border-radius: 0 20rpx 0 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: -50rpx;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 1;
+}
+
+.footer image {
+  width: 100%;
+  height: 100%;
+}
+.classify {
+  display: flex;
+  margin: 20rpx auto;
+  width: 90%;
+  height: 130rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow:2rpx -2rpx 0 2rpx rgba(224, 222, 222, 0.8);
+}
+.classify .classify_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.classify .classify_item image {
+  width: 30%;
+  height: 40%;
+}
+.classify .classify_item text {
+  font-size: 25rpx;
+}
+
+.profile_footer {
+  margin: 20rpx auto;
+  width: 90%;
+  height: 430rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow:2rpx -2rpx 0 2rpx rgba(224, 222, 222, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+.recently .recently_scroll {
+  height: 150rpx;
+  display: flex;
+}
+.recently .recently_scroll .scroll_item {
+  position: relative;
+  margin: 0 10rpx;
+  height: 99%;
+}
+.recently .recently_scroll .scroll_item  image {
+  width:150rpx;
+  height: 100%;
+}
+.recently .recently_scroll .scroll_item  .name {
+  position: absolute;
+  left: 0;
+  bottom: 0rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+.profile_footer .recently .title {
+  margin-left: 20rpx;
+  font-size: 25rpx;
+}
+
+.profile_footer .footer_item {
+  padding: 0 10rpx;
+  height: 75rpx;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2rpx solid #eeeeee;
+  line-height: 75rpx;
+  font-size: 28rpx;
+}

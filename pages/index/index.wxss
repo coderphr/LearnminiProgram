@@ -1,0 +1,95 @@
+.swiper {
+  width: 100%;
+  height: 300rpx;
+}
+
+.swiper-item,.swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+.recomend {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recomend .recomend-item {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.recomend .recomend-item image {
+  background-color:#ff230b;
+  padding: 20rpx;
+  margin-bottom: 15rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.scroll-view {
+  height: 300rpx;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.scroll-view .item {
+  margin: 0 20rpx;
+  width: 200rpx;
+}
+
+.scroll-view .item image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.scroll-view  .item text {
+  font-size: 26rpx;
+  /* 单行文本溢出 */
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本溢出 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topList {
+  height: 410rpx;
+}
+
+.musicItem {
+  margin: 20rpx 0;
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.musicItem image {
+  margin: 0px 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+.musicItem .count {
+  margin: 0 20rpx;
+}
+
+.musicItem .name {  
+  display: block;
+  word-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

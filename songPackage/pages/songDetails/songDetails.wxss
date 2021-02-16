@@ -1,0 +1,116 @@
+/* pages/songDetails/songDetails.wxss */
+.songContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+.songContainer .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.songContainer .cricle {
+  margin: 10rpx 0;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index:100;
+}
+.neddle {
+  position: relative;
+  top: -38rpx;
+  left: 60rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;
+  transform: rotate(-30deg);
+  transition: transform 1s;
+  z-index: 1;
+}
+
+.neddleTransform {
+  transform: rotate(0deg);
+}
+
+.disc {
+  position: relative;
+  top: -170rpx;
+  width: 598rpx;
+  height: 598rpx;
+}
+
+.descAnimate {
+  animation: desc 4s 1s linear infinite;
+}
+
+@keyframes desc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.descContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descContainer .pciture {
+  position: absolute;
+  top: 350rpx;
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+.musicControl {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1rpx solid #ffffff;
+}
+
+.musicControl text {
+  font-size: 80rpx; 
+  color: #ffffff;
+}
+
+.musicControl .big {
+  font-size: 150rpx;
+}
+
+.progressControl {
+  position: absolute;
+  top: 860rpx;
+  width: 640rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.barControl {
+  margin: 0 20rpx;
+  width: 470rpx;
+  height: 4rpx;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.audioControl {
+  position: relative;
+  height: 100%;
+  background-color: red;
+}
+.controlCircle {
+  position: absolute;
+  top: -6rpx;
+  right: -12rpx;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background-color:#fff;
+}

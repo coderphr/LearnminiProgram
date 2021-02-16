@@ -1,0 +1,12 @@
+function  nameFormat(val) {
+  if(!val) {
+    return '游客'
+  }else {
+    return val
+  }
+}
+
+
+module.exports = {
+  nameFormat:nameFormat
+}
